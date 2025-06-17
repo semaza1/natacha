@@ -63,22 +63,6 @@ export default function App() {
             Home
           </Link>
           <a
-            href="resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition"
-          >
-            Resume
-          </a>
-          <a
-            href="coverletter.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition"
-          >
-            Cover Letter
-          </a>
-          <a
             href="recomandation.pdf"
             target="_blank"
             rel="noopener noreferrer"
@@ -103,10 +87,22 @@ export default function App() {
             </p>
             <div className="flex flex-wrap gap-4">
               <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-                Book Consultation
+                <a 
+                href="resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                  View Resume
+                </a>
               </button>
               <button className="border border-gray-600 hover:border-purple-400 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-                View Portfolio
+                <a 
+                href="coverletter.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                  View Cover Letter
+                </a>
               </button>
             </div>
           </div>
