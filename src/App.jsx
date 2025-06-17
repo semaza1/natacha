@@ -223,7 +223,7 @@ export default function App() {
               <img
                 src={galleryImages[currentIndex]}
                 alt={`Gallery image ${currentIndex + 1}`}
-                className="object-contain h-full w-full"
+                className="object-none h-full w-full"
               />
               {/* Prev Button */}
               <button
