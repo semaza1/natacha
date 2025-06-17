@@ -52,7 +52,7 @@ export default function App() {
       <nav className="flex justify-between items-center py-4 px-4 border-b border-gray-700">
         <h1 className="text-2xl font-bold">Natacha</h1>
         <div className="space-x-4">
-          <Link to="/" className="hover:underline">
+          <Link to="/" className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition">
             Home
           </Link>
           <a
@@ -67,9 +67,17 @@ export default function App() {
             href="https://example.com/coverletter.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:underline"
+            className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition"
           >
             Cover Letter
+          </a>
+          <a
+            href="https://example.com/coverletter.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition"
+          >
+            Recomandation Letter
           </a>
         </div>
       </nav>
