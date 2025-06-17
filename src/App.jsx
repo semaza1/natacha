@@ -4,6 +4,13 @@ import { Link } from 'react-router-dom';
 import homeImage from './assets/natacha.JPG';
 import about from './assets/about.JPG';
 import semaza from './assets/semaza.JPG';
+import image1 from './assets/image1.JPG';
+import image2 from './assets/image2.JPG';
+import image3 from './assets/image3.JPG';
+import image4 from './assets/image4.JPG';
+import image5 from './assets/image5.JPG';
+import image6 from './assets/image6.JPG';
+import image7 from './assets/image7.JPG';
 
 
 export default function App() {
