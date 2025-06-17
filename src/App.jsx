@@ -3,9 +3,22 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import homeImage from './assets/natacha.JPG';
 import about from './assets/about.JPG';
+import semaza from './assets/semaza.JPG';
 
 
 export default function App() {
+
+    const galleryImages = [homeImage, about, semaza]; // Add as many as you want
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const goToPrev = () => {
+      setCurrentIndex((prev) => (prev === 0 ? galleryImages.length - 1 : prev - 1));
+    };
+
+    const goToNext = () => {
+      setCurrentIndex((prev) => (prev === galleryImages.length - 1 ? 0 : prev + 1));
+    };
 
     const [formData, setFormData] = useState({
     name: '',
@@ -206,19 +219,26 @@ export default function App() {
               <div className="w-24 h-1 bg-purple-600 mx-auto mb-6"></div>
               <p className="text-gray-400">See some of my recent transformations</p>
             </div>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-gray-700 border border-gray-600 h-64 rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <span className="text-4xl mb-2 block">📸</span>
-                  <p className="text-gray-500">Before & After Gallery</p>
-                </div>
-              </div>
-              <div className="bg-gray-700 border border-gray-600 h-64 rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <span className="text-4xl mb-2 block">🎥</span>
-                  <p className="text-gray-500">Styling Process Videos</p>
-                </div>
-              </div>
+            <div className="relative bg-gray-700 border border-gray-600 h-96 rounded-lg flex items-center justify-center overflow-hidden">
+              <img
+                src={galleryImages[currentIndex]}
+                alt={`Gallery image ${currentIndex + 1}`}
+                className="object-cover h-full w-full"
+              />
+              {/* Prev Button */}
+              <button
+                onClick={goToPrev}
+                className="absolute left-4 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-full"
+              >
+                ◀
+              </button>
+              {/* Next Button */}
+              <button
+                onClick={goToNext}
+                className="absolute right-4 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-full"
+              >
+                ▶
+              </button>
             </div>
           </div>
         </section>
