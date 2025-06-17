@@ -114,7 +114,7 @@ export default function App() {
                 I stay current with the latest trends and techniques through continuous education, ensuring you receive cutting-edge styling that looks amazing and feels authentically you.
               </p>
             </div>
-            <div className="bg-gray-800 border border-gray-600 h-64 rounded-lg flex items-center justify-center">
+            <div className="bg-gray-800 border border-gray-600 h-64 rounded-lg flex items-center justify-center overflow-hidden">
               <img src={about} alt="About image" />
             </div>
           </div>
