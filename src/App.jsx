@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import homeImage from './assets/natacha.JPG';
+import homeImage from './assets/natacha1.JPG';
 import about from './assets/about.JPG';
 import natacha from './assets/natacha.JPG';
 import image1 from './assets/Image1.JPG';
