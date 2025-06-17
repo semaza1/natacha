@@ -2,6 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import homeImage from './assets/natacha.JPG';
+import about from './assets/about.JPG';
+
 
 export default function App() {
 
@@ -113,7 +115,7 @@ export default function App() {
               </p>
             </div>
             <div className="bg-gray-800 border border-gray-600 h-64 rounded-lg flex items-center justify-center">
-              <p className="text-gray-500">[Working photo or salon image]</p>
+              <img src={about} alt="About image" />
             </div>
           </div>
         </section>
