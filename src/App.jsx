@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import {homeImage} from './assets/Religious_11.JPG';
 
 export default function App() {
 
@@ -84,9 +85,7 @@ export default function App() {
           <div className="relative">
             <div className="bg-gray-800 border border-gray-600 h-96 rounded-lg flex items-center justify-center overflow-hidden">
               <div className="text-center">
-                <div className="w-32 h-32 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-4xl">👩‍🦰</span>
-                </div>
+                <img src={homeImage} alt="Home image" />
                 <p className="text-gray-400">[Professional headshot photo here]</p>
               </div>
             </div>
