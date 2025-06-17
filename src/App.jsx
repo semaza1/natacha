@@ -97,7 +97,7 @@ export default function App() {
               <span className="text-purple-400"> Professional Hair Artistry</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Hi, I'm Natacha IGIHOZO - a passionate hairdresser with 5+ years of experience creating stunning transformations. From classic cuts to bold color changes, I bring your hair dreams to life.
+              Hi, I'm Natacha IGIHOZO - a passionate hairdresser with 6+ months of experience creating stunning transformations. From classic cuts to bold color changes, I bring your hair dreams to life.
             </p>
             <div className="flex flex-wrap gap-4">
               <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
