@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import {homeImage} from './assets/Religious_11.JPG';
+import homeImage from './assets/Religious_11.JPG';
 
 export default function App() {
 
