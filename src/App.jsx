@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import homeImage from './assets/natacha.JPG';
 import about from './assets/about.JPG';
-import semaza from './assets/semaza.JPG';
+import natacha from './assets/natacha.JPG';
 import image1 from './assets/Image1.JPG';
 import image2 from './assets/Image2.JPG';
 import image3 from './assets/image3.JPG';
@@ -56,22 +56,36 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-900 text-white font-sans">
       {/* Navigation */}
-      <nav className="flex justify-between items-center py-4 px-4 border-b border-gray-700">
-        <h1 className="text-2xl font-bold">Natacha</h1>
-        <div className="space-x-4">
-          <Link to="/" className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition">
+      <nav className="flex flex-wrap justify-between items-center py-4 px-4 border-b border-gray-700 bg-gray-900">
+        {/* Left Side: Image + Name */}
+        <div className="flex items-center space-x-3">
+          <img
+            src={natacha} // Adjust path as needed
+            alt="Igihozo Natacha"
+            className="w-10 h-10 rounded-full object-cover"
+          />
+          <h1 className="text-xl font-bold text-white">IGIHOZO Natacha</h1>
+        </div>
+
+        {/* Right Side: Navigation Links */}
+        <div className="space-x-4 mt-4 md:mt-0">
+          <Link
+            to="/"
+            className="inline-block bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition"
+          >
             Home
           </Link>
           <a
-            href="recomandation.pdf"
+            href="/recomandation.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition"
+            className="inline-block bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition"
           >
-            Recomandation Letter
+            Recommendation Letter
           </a>
         </div>
       </nav>
+
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 py-20 px-4">
