@@ -8,7 +8,7 @@ import semaza from './assets/semaza.JPG';
 
 export default function App() {
 
-    const galleryImages = [homeImage, about, semaza]; // Add as many as you want
+    const galleryImages = [image1, image2, image3, image4, image5, image6, image7]; // Add as many as you want
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -56,7 +56,7 @@ export default function App() {
             Home
           </Link>
           <a
-            href="coverletter.pdf"
+            href="resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition"
@@ -64,7 +64,7 @@ export default function App() {
             Resume
           </a>
           <a
-            href="https://example.com/coverletter.pdf"
+            href="coverletter.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition"
@@ -72,7 +72,7 @@ export default function App() {
             Cover Letter
           </a>
           <a
-            href="https://example.com/coverletter.pdf"
+            href="recomandation.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition"
