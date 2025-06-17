@@ -56,10 +56,10 @@ export default function App() {
             Home
           </Link>
           <a
-            href="https://example.com/resume.pdf"
+            href="coverletter.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:underline"
+            className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition"
           >
             Resume
           </a>
@@ -314,7 +314,7 @@ export default function App() {
                   className="mt-1 w-4 h-4 text-purple-600 bg-white border-gray-300 rounded focus:ring-purple-500"
                 />
                 <label htmlFor="consent" className="text-purple-100 text-sm leading-relaxed">
-                  I consent to being contacted by Sarah's Hair Studio regarding my inquiry. I understand that my personal information will be handled according to the privacy policy. *
+                  I consent to being contacted by Natacha's Hair Studio regarding my inquiry. I understand that my personal information will be handled according to the privacy policy. *
                 </label>
               </div>
 
