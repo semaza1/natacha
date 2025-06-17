@@ -219,11 +219,11 @@ export default function App() {
               <div className="w-24 h-1 bg-purple-600 mx-auto mb-6"></div>
               <p className="text-gray-400">See some of my recent transformations</p>
             </div>
-            <div className="relative bg-gray-700 border border-gray-600 h-96 rounded-lg flex items-center justify-center overflow-hidden">
+            <div className="relative bg-gray-700 border border-gray-600 h-100 rounded-lg flex items-center justify-center overflow-hidden">
               <img
                 src={galleryImages[currentIndex]}
                 alt={`Gallery image ${currentIndex + 1}`}
-                className="object-fill h-full w-full"
+                className="object-cover h-full w-full"
               />
               {/* Prev Button */}
               <button
