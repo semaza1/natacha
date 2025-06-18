@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import homeImage from './assets/natacha1.JPG';
 import about from './assets/about.JPG';
@@ -18,6 +18,13 @@ export default function App() {
     const galleryImages = [image1, image2, image3, image4, image5, image6, image7]; // Add as many as you want
 
     const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+      galleryImages.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+    }, []);
 
     const goToPrev = () => {
       setCurrentIndex((prev) => (prev === 0 ? galleryImages.length - 1 : prev - 1));
