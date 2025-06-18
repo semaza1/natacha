@@ -16,7 +16,7 @@ import image7 from './assets/image7.JPG';
 export default function App() {
 
     const galleryImages = [image1, image2, image3, image4, image5, image6, image7]; // Add as many as you want
-
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
@@ -25,6 +25,13 @@ export default function App() {
         img.src = src;
       });
     }, []);
+    const openModal = () => {
+      setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+      setIsModalOpen(false);
+    };
 
     const goToPrev = () => {
       setCurrentIndex((prev) => (prev === 0 ? galleryImages.length - 1 : prev - 1));
@@ -255,7 +262,8 @@ export default function App() {
               <img
                 src={galleryImages[currentIndex]}
                 alt={`Gallery ${currentIndex + 1}`}
-                className="w-full h-full object-cover transition-all duration-300"
+                className="w-full h-full object-cover cursor-pointer transition-all duration-300"
+                onClick={openModal}
               />
 
               {/* Prev/Next Buttons */}
@@ -273,6 +281,23 @@ export default function App() {
               </button>
             </div>
           </div>
+          {isModalOpen && (
+          <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+            <div className="relative max-w-4xl w-full mx-4">
+              <button
+                onClick={closeModal}
+                className="absolute top-2 right-2 text-white text-3xl font-bold hover:text-purple-400 transition"
+              >
+                &times;
+              </button>
+              <img
+                src={galleryImages[currentIndex]}
+                alt={`Full Gallery ${currentIndex + 1}`}
+                className="w-full max-h-[80vh] object-contain rounded-lg"
+              />
+            </div>
+          </div>
+)}
         </section>
 
         {/* Call to Action Section */}
