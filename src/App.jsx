@@ -251,23 +251,23 @@ export default function App() {
               <div className="w-24 h-1 bg-purple-600 mx-auto mb-6"></div>
               <p className="text-gray-400">See some of my recent transformations</p>
             </div>
-            <div className="relative bg-gray-700 border border-gray-600 h-100 rounded-lg flex items-center justify-center overflow-hidden">
+            <div className="relative h-64 w-full border border-gray-600 rounded-lg overflow-hidden">
               <img
                 src={galleryImages[currentIndex]}
-                alt={`Gallery image ${currentIndex + 1}`}
-                className="object-cover h-[50rem] w-full"
+                alt={`Gallery ${currentIndex + 1}`}
+                className="w-full h-full object-cover transition-all duration-300"
               />
-              {/* Prev Button */}
+
+              {/* Prev/Next Buttons */}
               <button
                 onClick={goToPrev}
-                className="absolute left-4 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-full"
+                className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-purple-600 text-white px-3 py-2 rounded-full hover:bg-purple-700"
               >
                 ◀
               </button>
-              {/* Next Button */}
               <button
                 onClick={goToNext}
-                className="absolute right-4 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-full"
+                className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-purple-600 text-white px-3 py-2 rounded-full hover:bg-purple-700"
               >
                 ▶
               </button>
