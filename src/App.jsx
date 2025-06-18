@@ -127,8 +127,8 @@ export default function App() {
           {/* Hero Content */}
           <div className="space-y-6">
             <h1 className="text-5xl font-bold leading-tight">
-              Transform Your Look with 
-              <span className="text-purple-400"> Professional Hair Artistry</span>
+              Artful Hair Designs that  
+              <span className="text-purple-400"> Reflect the Real You</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
               Hi, I'm Natacha IGIHOZO - a Passionate and skilled aspiring hairdresser with hands-on experience in styling, braiding, and shaving. Eager to be on high quality of styling and became a professional hairdressing . Dedicated to quality service, hygiene, and customer satisfaction.
