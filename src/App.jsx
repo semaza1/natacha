@@ -1,5 +1,25 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+useEffect(() => {
+  const handleKeyDown = (e) => {
+    if (!isModalOpen) return;
+
+    if (e.key === "ArrowLeft") {
+      goToPrev();
+    } else if (e.key === "ArrowRight") {
+      goToNext();
+    } else if (e.key === "Escape") {
+      closeModal();
+    }
+  };
+
+  window.addEventListener("keydown", handleKeyDown);
+
+  return () => {
+    window.removeEventListener("keydown", handleKeyDown);
+  };
+}, [isModalOpen]);
+
 import { Link } from 'react-router-dom';
 import homeImage from './assets/natacha1.JPG';
 import about from './assets/about.JPG';
