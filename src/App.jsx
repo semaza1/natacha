@@ -131,7 +131,7 @@ export default function App() {
               <span className="text-purple-400"> Professional Hair Artistry</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Hi, I'm Natacha IGIHOZO - a passionate hairdresser with 6+ months of experience creating stunning transformations. From classic cuts to bold color changes, I bring your hair dreams to life.
+              Hi, I'm Natacha IGIHOZO - a Passionate and skilled aspiring hairdresser with hands-on experience in styling, braiding, and shaving. Eager to be on high quality of styling and became a professional hairdressing . Dedicated to quality service, hygiene, and customer satisfaction.
             </p>
             <div className="flex flex-wrap gap-4">
               <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
@@ -180,10 +180,10 @@ export default function App() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                With a keen eye for detail and a passion for beauty, I specialize in creating personalized looks that enhance your natural features and boost your confidence. Every client is unique, and I believe your hairstyle should reflect your personality and lifestyle.
+                I am a creative and hardworking young person with strong skills in hairdressing, like braiding, styling, and shaving. I also take part in leadership, public speaking, art, and managing small projects. While I study Math, Physics, and Computer Science, I also work to build my skills and help others.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed">
-                I stay current with the latest trends and techniques through continuous education, ensuring you receive cutting-edge styling that looks amazing and feels authentically you.
+                My dream is to start a hairdressing company that trains and supports young people, and to run other small projects that grow creativity and business in my community.
               </p>
             </div>
             <div className="bg-gray-800 border border-gray-600 h-72 rounded-lg flex items-center justify-center overflow-hidden">
@@ -202,31 +202,31 @@ export default function App() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-2xl">✂️</span>
+                  <span className="text-2xl"></span>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Precision Cutting</h3>
-                <p className="text-gray-400">Expert cuts tailored to your face shape and style preferences</p>
+                <h3 className="text-xl font-semibold mb-2">Hair Dressing</h3>
+                <p className="text-gray-400">Braiding, Styling, and Shaving: Skilled in hair care and grooming for both men and women, offering services like neat braids, stylish cuts, and clean shaves.</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <span className="text-2xl">🎨</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Color Artistry</h3>
-                <p className="text-gray-400">From subtle highlights to bold transformations</p>
+                <h3 className="text-xl font-semibold mb-2">Glam and Gourmet Project</h3>
+                <p className="text-gray-400">Led and organized small business projects that combined beauty services and food sales to raise income and build entrepreneurship skills.</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <span className="text-2xl">💫</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Special Styling</h3>
-                <p className="text-gray-400">Bridal, events, and special occasion styling</p>
+                <h3 className="text-xl font-semibold mb-2">Robotic Arm Creation</h3>
+                <p className="text-gray-400">Participated in building a robotic arm, learning how to use engineering tools and solve real-world problems.</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <span className="text-2xl">🤝</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Client Care</h3>
-                <p className="text-gray-400">Personalized consultations and ongoing hair care advice</p>
+                <h3 className="text-xl font-semibold mb-2">Peer Teaching</h3>
+                <p className="text-gray-400">Helped classmates understand different subjects by sharing knowledge and guiding them</p>
               </div>
             </div>
           </div>
@@ -242,29 +242,29 @@ export default function App() {
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-purple-600 rounded-full mt-3"></div>
-                <p className="text-gray-300">Styled over 500+ satisfied clients</p>
+                <p className="text-gray-300">Provided shaving and hairdressing services in my community, helping people feel confident and look their best.</p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-purple-600 rounded-full mt-3"></div>
-                <p className="text-gray-300">Certified in Advanced Color Theory and Application</p>
+                <p className="text-gray-300">Managed a student-run business that offered beauty services and food, building teamwork and business skills.</p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-purple-600 rounded-full mt-3"></div>
-                <p className="text-gray-300">Featured stylist at 10+ fashion and bridal showcases</p>
+                <p className="text-gray-300">Successfully participated in a STEM project where I helped design and build a robotic arm using engineering tools.</p>
               </div>
             </div>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-purple-600 rounded-full mt-3"></div>
-                <p className="text-gray-300">5-star average rating from client reviews</p>
+                <p className="text-gray-300">Taught young girls in my community about women’s health, hygiene, and self-care, promoting confidence and awareness.</p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-purple-600 rounded-full mt-3"></div>
-                <p className="text-gray-300">Specialized training in sustainable hair care practices</p>
+                <p className="text-gray-300">Created pencil drawings and designed products using graphic design and SolidWorks software for 3D/2D printing</p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-purple-600 rounded-full mt-3"></div>
-                <p className="text-gray-300">Recognized for excellence in customer service</p>
+                <p className="text-gray-300">Took part in debate and speaking events, improving my confidence and communication skills.</p>
               </div>
             </div>
           </div>
